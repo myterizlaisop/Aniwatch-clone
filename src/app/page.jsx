@@ -1,6 +1,7 @@
 import Image from "next/image";
 import React from "react";
 import { TrendingCard } from "./components/TrendingCard";
+import { TopAiring } from "./components/TopAiring";
 
 function AnimeCard() {
   return (
@@ -24,7 +25,7 @@ function AnimeCard() {
               <input
                 type="text"
                 placeholder="Search anime..."
-                className="bg-transparent  px-4 flex-grow  text-gray-700"
+                className="bg-transparent  px-4 flex-grow  text-[#fff] "
               />
               <button className="text-gray-600 focus:outline-none">
                 <svg
@@ -208,6 +209,60 @@ function AnimeCard() {
                   ranking={1}
                   image="https://via.placeholder.com/100x200"
                 />
+              </div>
+            </div>
+            <div>
+              <div className="flex max-w-[1440px] gap-7">
+                <div>
+                  <span className=" text-[48px] text-[#FFDD95]">
+                    Top Watching
+                  </span>
+                  <TopAiring
+                    bigTitle="TopAiring"
+                    name={"One Piece"}
+                    ccepisode={1222}
+                    translate={1222}
+                    image="https://via.placeholder.com/80x100"
+                  />
+                </div>
+                <div>
+                  <span className=" text-[48px] text-[#FFDD95]">
+                    Most Popular
+                  </span>
+
+                  <TopAiring
+                    bigTitle="TopAiring"
+                    name={"One Piece"}
+                    ccepisode={1222}
+                    translate={1222}
+                    image="https://via.placeholder.com/80x100"
+                  />
+                </div>
+                <div>
+                  <span className=" text-[48px] text-[#FFDD95]">
+                    Most Favourite
+                  </span>
+
+                  <TopAiring
+                    bigTitle="TopAiring"
+                    name={"One Piece"}
+                    ccepisode={1222}
+                    translate={1222}
+                    image="https://via.placeholder.com/80x100"
+                  />
+                </div>
+                <div>
+                  <span className=" text-[48px] text-[#FFDD95]">
+                    Latest Completed
+                  </span>
+                  <TopAiring
+                    bigTitle="TopAiring"
+                    name={"One Piece"}
+                    ccepisode={1222}
+                    translate={1222}
+                    image="https://via.placeholder.com/80x100"
+                  />
+                </div>
               </div>
             </div>
           </div>
